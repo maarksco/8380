@@ -1,0 +1,161 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #80cbc4;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4db6ac;
+}
+
+/* Formulaire */
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #b0bec5;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+form input, form select {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border: 1px solid #4db6ac;
+}
+
+form button {
+    background-color: #80cbc4;
+    color: #121212;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #4db6ac;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+table th {
+    background-color: #333;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table tr:hover {
+    background-color: #2e2e2e;
+}
+
+/* Ajuster les largeurs des colonnes */
+table th:nth-child(1), table td:nth-child(1) {
+    width: 25%; /* Fournisseur */
+}
+
+table th:nth-child(3), table td:nth-child(3) {
+    width: 10%; /* Code */
+}
+
+/* Boutons */
+.edit-btn, .flat {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover, .flat:hover {
+    background-color: #2980b9;
+}
+
+/* Barre de recherche */
+.search-form input[type="text"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #80cbc4;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #4db6ac;
+}
+.cancel-btn {
+    background: none;
+    border: none;
+    color: #e67e22; /* Orange discret */
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.cancel-btn:hover {
+    color: #d35400; /* Orange plus foncé au survol */
+    text-decoration: none;
+}
